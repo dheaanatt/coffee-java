@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="imgs/branding/COFFE JAVA.png"
+      type="image/x-icon"
+    />
+    <title>COFFEE JAVA - HOME</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- #################### -CART PANEL- ############################################################ -->
+
+    <!-- CART PANEL -->
+    <div class="cartpanel" id="cart" style="display: none">
+      <div id="cartcontainer">
+        <h1 id="infoygkmpesen">YANG KAMU PESEN :</h1>
+        <div class="itemslist" id="itemslist"></div>
+        <div class="actioncart">
+          <h1 id="tothaDisplay">TOTAL HARGA</h1>
+          <div id="checkoutbtn" class="checkoutbtn">CHECKOUT</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- #################### -NAVBAR- ############################################################ -->
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="navbtn" id="backbtn">BACK</div>
+      <div class="navbtn" id="cartbtn"></div>
+      <div class="space"><div class="vline"></div></div>
+      <div class="navbtn" id="scrollbtn">ABOUT</div>
+      <div class="navbtn" id="contactbtn">CONTACT</div>
+    </div>
+
+    <!-- #################### -ALERT- ############################################################ -->
+
+    <!-- ALERT -->
+    <div class="alert" id="alert" style="display: none">
+      <h1 id="teksAlert"></h1>
+      <div class="btncntinr">
+        <div class="alertbtn" id="tambahproduk">TAMBAHKAN</div>
+        <div class="alertbtn" id="gajaditambahproduk">BATAL</div>
+      </div>
+    </div>
+
+    <!-- #################### -INPUT NAMA- ############################################################ -->
+
+    <!-- INPUT NAMA -->
+    <div class="alert" id="alert2" style="display: none">
+      <h1>MASUKKAN NAMA KAMU TERLEBIH DAHULU</h1>
+      <input class="alertbtn2" type="text" id="inputnamauser" />
+      <div class="alertbtn2" id="tambahproduk2">CHECKOUT</div>
+    </div>
+
+    <div id="thePage">
+      <!-- #################### -HOME PAGE- ############################################################ -->
+
+      <!-- MENU PAGE -->
+      <div id="HomePage" style="display: flex">
+        <!-- HEADER IMAGE -->
+        <img width="100%" src="imgs/branding/HEADER.png" />
+
+        <!-- BAGIAN ABOUT -->
+        <div class="about" id="about">
+          <img src="imgs/branding/COFFE JAVA.png" />
+          <p>
+            <b> <u>ABOUT US - COFFEE JAVA</u> </b> <br />
+            Selamat datang di Coffee Java, tempat di mana aroma kopi segar
+            bertemu dengan suasana yang hangat dan nyaman. Kami berdiri sejak
+            2025 Semester 2 dengan tujuan menyajikan kopi terbaik yang dibuat
+            dengan sepenuh hati. Menggunakan biji kopi pilihan dari petani lokal
+            dan proses penyeduhan yang cermat, kami ingin memberikan pengalaman
+            ngopi yang istimewa bagi setiap pelanggan. Di sini, kamu bisa
+            menikmati berbagai varian kopi khas, dari espresso yang kuat hingga
+            latte yang lembut, serta aneka camilan lezat yang menemani waktu
+            santai atau kerja. Dengan atmosfer yang cozy dan layanan yang ramah,
+            kami berharap Coffee Java bisa menjadi tempat favoritmu untuk
+            berkumpul, bekerja, atau sekadar menikmati secangkir kopi
+            berkualitas.
+          </p>
+        </div>
+
+        <!-- PEMBATAS GELOMBANG -->
+        <img width="100%" src="imgs/branding/GELOMBANGMENU.png" />
+
+        <!-- MASUK KATEGORI -->
+        <div class="menukategori">
+          <div id="categoryItem-minuman"><p>MENU MINUMAN</p></div>
+          <div id="categoryItem-makanan"><p>MENU MAKANAN</p></div>
+        </div>
+      </div>
+
+      <!-- #################### -MENU MAKANAN PAGE- ############################################################ -->
+
+      <!-- MENU MAKANAN PAGE -->
+      <div id="MenuMakananPage" style="display: none">
+        <!-- Core Menu -->
+        <div class="appetizers">
+          <h1
+            style="position: absolute; margin-top: 100px"
+            class="center-styled-title40-fliped"
+          >
+            Core Menu
+          </h1>
+
+          <!-- Bakery -->
+          <img width="100%" src="imgs/branding/GEOMBANG MENU DALAM.png" />
+          <h1 class="center-styled-title25">Bakery</h1>
+
+          <div class="productsContainer">
+            <div class="item" id="bagelbites">
+              <img
+                src="imgs/products/makanan/core menu/BAKERY/bagel bites.jpg"
+              />
+              <p>BAGEL BITES</p>
+              <b>50k</b>
+            </div>
+
+            <div class="item" id="beefsausage">
+              <img
+                src="imgs/products/makanan/core menu/BAKERY/beef sausage&cheese croissant.jpg"
+              />
+              <p>BEEF SAUSAGE & CHEESE CROISSANT</p>
+              <b>58k</b>
+            </div>
+
+            <div class="item" id="cheesebagels">
+              <img
+                src="imgs/products/makanan/core menu/BAKERY/cheese bagels.jpg"
+              />
+              <p>CHEESE BAGELS</p>
+              <b>50k</b>
+            </div>
+
+            <div class="item" style="margin-top: -50px" id="spicytuna">
+              <img
+                src="imgs/products/makanan/core menu/BAKERY/spicy tuna bread.jpg"
+              />
+              <p>SPICY TUNA BREAD</p>
+              <b> 52k</b>
+            </div>
+          </div>
+
+          <!-- Sandwiches -->
+          <img
+            style="margin-top: 100px"
+            width="100%"
+            src="imgs/branding/GEOMBANG MENU DALAM tgh2.png"
+          />
+          <h1
+            style="background-color: #543a14; margin-top: -10px"
+            class="center-styled-title25"
+          >
+            Cakes
+          </h1>
+
+          <div
+            style="
+              margin-top: -10px;
+              padding-bottom: 100px;
+              background-color: #543a14;
+            "
+            class="productsContainer"
+          >
+            <div class="item" style="margin-top: 100px" id="beeffilone">
+              <img
+                src="imgs/products/makanan/core menu/Sandwiches/beef filone.jpg"
+              />
+              <p>BEEF FILONE</p>
+              <b>52k</b>
+            </div>
+
+            <div class="item" id="classictuna">
+              <img
+                src="imgs/products/makanan/core menu/Sandwiches/classic tuna toastie.jpg"
+              />
+              <p>CLASSIC TUNA TOASTIE</p>
+              <b>52k</b>
+            </div>
+
+            <div class="item" id="smokedbeef">
+              <img
+                src="imgs/products/makanan/core menu/Sandwiches/smoked beef mushroom & cheese panini.jpg"
+              />
+              <p>SMOKED BEEF MUSHROOM & CHEESE PANINI</p>
+              <b>55k</b>
+            </div>
+
+            <div class="item" style="margin-top: -50px" id="triomixed">
+              <img
+                src="imgs/products/makanan/core menu/Sandwiches/trio mixed roll.jpg"
+              />
+              <p>TRIO MIXED ROLL</p>
+              <b>53k</b>
+            </div>
+          </div>
+
+          <img
+            width="100%"
+            src="imgs/branding/GEOMBANG MENU DALAM tgh (1).png"
+          />
+        </div>
+
+        <!-- Appetizer -->
+        <div style="margin-top: -10px" class="coreMenu">
+          <h1 style="position: absolute" class="center-styled-title40-fliped">
+            Appetizers
+          </h1>
+
+          <!-- Bakery -->
+          <img width="100%" src="imgs/branding/GEOMBANG MENU DALAM.png" />
+          <h1 class="center-styled-title25">Bakery</h1>
+
+          <div class="productsContainer">
+            <div class="item" style="margin-top: 100px" id="almondwhirl">
+              <img
+                src="imgs/products/makanan/apperizers/bakery/almond whirl choco chips danish.jpg"
+              />
+              <p>ALMOND WHIRL CHOCO CHIPS DANISH</p>
+              <b>65K</b>
+            </div>
+
+            <div class="item" id="buttercroissant">
+              <img
+                src="imgs/products/makanan/apperizers/bakery/butter croissant.jpg"
+              />
+              <p>BUTTER CROISSSANT</p>
+              <b>35k</b>
+            </div>
+
+            <div class="item" id="chocochips">
+              <img
+                src="imgs/products/makanan/apperizers/bakery/choco chips pistachio pocket.jpg"
+              />
+              <p>CHOCO CHIPS PISTACHIO POCKET</p>
+              <b>45k</b>
+            </div>
+
+            <div class="item" id="cinnamonrolls" style="margin-top: -50px">
+              <img
+                src="imgs/products/makanan/apperizers/bakery/cinnamon rolls.jpg"
+              />
+              <p>CINNAMON ROLLS</p>
+              <b>40k</b>
+            </div>
+          </div>
+
+          <!-- Cakes -->
+          <img
+            style="margin-top: 100px"
+            width="100%"
+            src="imgs/branding/GEOMBANG MENU DALAM tgh2.png"
+          />
+          <h1
+            style="background-color: #543a14; margin-top: -10px"
+            class="center-styled-title25"
+          >
+            Cakes
+          </h1>
+
+          <div
+            style="
+              margin-top: -10px;
+              padding-bottom: 100px;
+              background-color: #543a14;
+            "
+            class="productsContainer"
+          >
+            <div class="item" style="margin-top: 100px" id="bananamaltine">
+              <img
+                src="imgs/products/makanan/apperizers/Sweet & Cakes/banana maltine eclarairs.jpg"
+              />
+              <p>BANANA MATINE ECLARAIRS</p>
+              <b>55k</b>
+            </div>
+
+            <div class="item" id="carrotwalnut">
+              <img
+                src="imgs/products/makanan/apperizers/Sweet & Cakes/carrot walnut cake.jpg"
+              />
+              <p>CARROT WALNUT CAKE</p>
+              <b>55k</b>
+            </div>
+
+            <div class="item" id="chocolategenache">
+              <img
+                src="imgs/products/makanan/apperizers/Sweet & Cakes/chocolate genache & raspberry cake.jpg"
+              />
+              <p>CHOCOLATE GENACHE & RASPBERRRY CAKE</p>
+              <b> 55k </b>
+            </div>
+
+            <div class="item" style="margin-top: -50px" id="espressobrownies">
+              <img
+                src="imgs/products/makanan/apperizers/Sweet & Cakes/espresso broenies.jpg"
+              />
+              <p>ESPRESSO BROWNIES</p>
+              <b>52k</b>
+            </div>
+          </div>
+
+          <img
+            width="100%"
+            src="imgs/branding/GEOMBANG MENU DALAM tgh (1).png"
+          />
+        </div>
+      </div>
+
+      <!-- #################### -MENU MINUMAN PAGE- ############################################################ -->
+
+      <!-- MENU MINUMAN PAGE -->
+      <div id="MenuMinumanPage" style="display: none">
+        <!-- Blended Beverages -->
+        <div
+          class="BlendedBeverages"
+          style="background-color: #b98746; padding-bottom: 200px"
+        >
+          <h1
+            style="position: absolute; margin-top: 300px"
+            class="center-styled-title40"
+          >
+            Blended Beverages
+          </h1>
+
+          <img width="100%" src="imgs/branding/HDMENU.png" />
+
+          <!-- Blended Coffee -->
+          <h1 style="padding-bottom: 50px" class="center-styled-title25">
+            Blended Coffee
+          </h1>
+
+          <div class="productsContainer">
+            <div class="item" id="carameljava">
+              <img
+                src="imgs/products/minuman/Blended Beverages/blended cream/caramel java chip frapuccino.jpg"
+              />
+              <p>CARAMEL JAVA CHIP FRAPUCCINO</p>
+              <b>45k</b>
+            </div>
+
+            <div class="item" id="coffefrapuccino">
+              <img
+                src="imgs/products/minuman/Blended Beverages/blended cream/coffee frapuccino.jpg"
+              />
+              <p>COFFEE FRAPUCCINO</p>
+              <b>43k</b>
+            </div>
+
+            <div class="item" id="hezelnutfrapuccino">
+              <img
+                src="imgs/products/minuman/Blended Beverages/blended cream/hazelnut frapuccino.jpg"
+              />
+              <p>HAZELNUT FRAPUCCINO</p>
+              <b>45k</b>
+            </div>
+
+            <div class="item" id="javachip">
+              <img
+                src="imgs/products/minuman/Blended Beverages/blended cream/java chip frapuccino.jpg"
+              />
+              <p>JAVA CHIP FRAPUCCINO</p>
+              <b>45K</b>
+            </div>
+          </div>
+
+          <!-- Blended Cream -->
+          <h1
+            style="margin-top: 200px; padding-bottom: 50px"
+            class="center-styled-title25"
+          >
+            Blended Cream
+          </h1>
+
+          <div class="productsContainer" style="width: 80%; margin: auto">
+            <div class="item" id="doublechocolate">
+              <img
+                src="imgs/products/minuman/Blended Beverages/blended coffee/double chocolate cream frapuccino.jpg"
+              />
+              <p>DOUBLE CHOCOLATE CREAM FRAPUCCINO</p>
+              <b>54K</b>
+            </div>
+
+            <div class="item" id="greentea">
+              <img
+                src="imgs/products/minuman/Blended Beverages/blended coffee/green tea frapuccino.jpg"
+              />
+              <p>GREEN TEA FRAPUCCINO</p>
+              <b>55K</b>
+            </div>
+
+            <div class="item" id="vannilacream">
+              <img
+                src="imgs/products/minuman/Blended Beverages/blended coffee/vanilla cream frapuccino.jpg"
+              />
+              <p>VANILLA CREAM FRAPUCCINO</p>
+              <b>54k</b>
+            </div>
+          </div>
+
+          <!-- Blended Tea -->
+          <h1
+            style="margin-top: 200px; padding-bottom: 50px"
+            class="center-styled-title25"
+          >
+            Blended Tea
+          </h1>
+
+          <div class="productsContainer" style="width: 60%; margin: auto">
+            <div class="item" id="manggopassion">
+              <img
+                src="imgs/products/minuman/Blended Beverages/blended tea/manggo passion frapuccino.jpg"
+              />
+              <p>MANGGO PASSION FRAPUCCINO</p>
+              <b>35K</b>
+            </div>
+
+            <div class="item" id="ruspberry">
+              <img
+                src="imgs/products/minuman/Blended Beverages/blended tea/ruspberry currant frapuccino.jpg"
+              />
+              <p>RASPBERRRY CURRANT FRAPUCCINO</p>
+              <b>45k</b>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brewed Coffee -->
+        <div
+          class="BlendedBeverages"
+          style="background-color: #6c4e31; padding-bottom: 200px"
+        >
+          <h1
+            style="position: absolute; margin-top: 200px"
+            class="center-styled-title40"
+          >
+            Brewed Coffee
+          </h1>
+          <img width="100%" src="imgs/branding/GELOMBANGTENGAH.png" />
+
+          <div class="productsContainer">
+            <div class="item" id="coldbrew">
+              <img src="imgs/products/minuman/Brewed Coffee/cold brew.jpg" />
+              <p>COLD BREW</p>
+              <b>43K</b>
+            </div>
+
+            <div class="item" id="freshlybrwed">
+              <img
+                src="imgs/products/minuman/Brewed Coffee/freshly brwed coffe.jpg"
+              />
+              <p>FRESHLY BREWED COFFEE</p>
+              <b>42K</b>
+            </div>
+
+            <div class="item" id="misto">
+              <img src="imgs/products/minuman/Brewed Coffee/misto.jpg" />
+              <p>MISTO</p>
+              <b>45K</b>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expresso Beverages -->
+        <div
+          class="BlendedBeverages"
+          style="background-color: #472d07; padding-bottom: 200px"
+        >
+          <h1
+            style="position: absolute; margin-top: 200px"
+            class="center-styled-title40"
+          >
+            Expresso Beverages
+          </h1>
+          <img width="100%" src="imgs/branding/GELOMBANGBAWAH.png" />
+
+          <div class="productsContainer">
+            <div class="item" id="caffelatte">
+              <img
+                src="imgs/products/minuman/Expresso Beverages/caffe latte.jpg"
+              />
+              <p>CAFFE LATTE</p>
+              <b>45k</b>
+            </div>
+
+            <div class="item" id="caffemocha">
+              <img
+                src="imgs/products/minuman/Expresso Beverages/caffe mocha.jpg"
+              />
+              <p>CAFFE MOCHA</p>
+              <b>45k</b>
+            </div>
+
+            <div class="item" id="cappucino">
+              <img
+                src="imgs/products/minuman/Expresso Beverages/cappucino.jpg"
+              />
+              <p>CAPPUCINO</p>
+              <b>43k</b>
+            </div>
+
+            <div class="item" id="caramelmacchiato">
+              <img
+                src="imgs/products/minuman/Expresso Beverages/caramel macchiato.jpg"
+              />
+              <p>CARAMEL MACCHIATO</p>
+              <b>43k</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- #################### -CONTACT PAGE- ############################################################ -->
+
+      <!-- CONTACT PAGE -->
+      <div
+        style="background-color: #f0a8d0; display: none"
+        id="contactpage"
+        class="contactpage"
+      >
+        <div style="background-color: #f0a8d0" class="pembatas-menu">
+          <img width="100%" src="imgs/branding/CONTACT ATAS (1).png" />
+        </div>
+        <div class="panelCONTACT">
+          <div>
+            <h1>CONTACT US:</h1>
+            <br />
+            <br />
+          </div>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact">
+            <div class="contakdetails">
+              <h2>WHATSAPP : 081932403199</h2>
+              <h2>
+                INSTAGRAM :
+                <a href="https://www.instagram.com/dhea.natalyaa/"
+                  >DHEA NATALNYA</a
+                >
+              </h2>
+              <h2>GMAIL : dheanatalyaa@gmail.com</h2>
+            </div>
+            <div class="maps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1933.9570899218015!2d115.16874037930315!3d-8.512642259963204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23b6a8b9b5e83%3A0x26d48e4fa61a6bd!2sSMK%20Negeri%202%20Tabanan!5e1!3m2!1sid!2sid!4v1738630503449!5m2!1sid!2sid"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="pembatas-gepenk-gajadi">
+          <img width="100%" src="imgs/branding/CONTACT BAWAH(2).png" />
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
